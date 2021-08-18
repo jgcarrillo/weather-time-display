@@ -9,4 +9,8 @@ const CONFIG = {
 	greetingNight: 'Good night',
 
 	// WEATHER
+	weatherKey: '',
+	weatherUnit: '',
+	weatherLatitude: '',
+	weatherLongitude: '',
 };
