@@ -1,0 +1,79 @@
+:root {
+	--bg-color: lightgreen;
+	--bg-time: black;
+	--bg-weather: white;
+	--header-color: white;
+	--header-shadow: 2px 2px 5px gray;
+	--container-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	--main-time-color: white;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--bg-color);
+}
+
+.header {
+	text-align: center;
+	padding: 0.2rem;
+}
+
+.header__title {
+	color: var(--header-color);
+	text-shadow: var(--header-shadow);
+}
+
+.main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-template-areas: 'time weather';
+	width: 70%;
+	height: 80vh;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: var(--container-shadow);
+}
+
+.main__time {
+	grid-area: time;
+	color: var(--main-time-color);
+	background-color: var(--bg-time);
+}
+
+.clock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.clock span {
+	font-size: 100px;
+}
+
+.main__weather {
+	grid-area: weather;
+	background-color: var(--bg-weather);
+}
+
+@media only screen and (max-width: 1000px) {
+	.clock span {
+		font-size: 40px;
+	}
+
+	.header__title {
+		font-size: 40px;
+	}
+
+	.main {
+		height: 70vh;
+	}
+}
