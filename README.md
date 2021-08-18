@@ -11,6 +11,7 @@
 -   [✨ Explanation](#-explanation)
 -   [🎨 Customization and features](#-customization-and-features)
 -   [⛈️ Weather API](#-weather-api)
+-   [💛 Contact](#-contact)
 
 ### ✨ Explanation
 
@@ -37,3 +38,13 @@ greetingNight: 'Good night'
 ```
 
 ### ⛈️ Weather API
+
+_Work in progress_
+
+### 💛 Contact
+
+If you have some doubts or need to ask something about the project, feel free to reach me here:
+
+-   Twitter: [https://twitter.com/jgcarrillo](https://twitter.com/jgcarrillo_)
+-   LinkedIn: [https://es.linkedin.com/in/jgcarrilloweb](https://es.linkedin.com/in/jgcarrilloweb)
+-   Website: [https://jgcarrillo.com/](https://jgcarrillo.com/)
