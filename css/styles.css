@@ -77,8 +77,31 @@ body {
 }
 
 .main__weather {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas:
+		'date'
+		'weather';
 	grid-area: weather;
 	background-color: var(--bg-weather);
+	text-align: center;
+}
+
+.month {
+	grid-area: date;
+	font-size: 70px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.weather {
+	grid-area: weather;
+	margin-top: 0;
+	margin-bottom: auto;
+	font-size: 50px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -91,6 +114,18 @@ body {
 	}
 
 	.main {
-		height: 70vh;
+		height: 65vh;
+	}
+
+	.month {
+		font-size: 40px;
+	}
+
+	.weather {
+		font-size: 30px;
+	}
+
+	.greetings__text {
+		font-size: 30px;
 	}
 }
