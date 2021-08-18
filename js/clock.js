@@ -15,6 +15,7 @@ const displayClock = () => {
 	contentHours.textContent = dateFormat.hours;
 	contentMinutes.textContent = dateFormat.minutes;
 	contentSeconds.textContent = dateFormat.seconds;
+
 	setTimeout(displayClock, 1000);
 };
 
