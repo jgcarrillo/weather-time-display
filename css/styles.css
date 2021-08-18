@@ -3,7 +3,7 @@
 	--bg-time: black;
 	--bg-weather: white;
 	--header-color: white;
-	--header-shadow: 2px 2px 5px gray;
+	--text-shadow: 2px 2px 5px gray;
 	--container-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	--main-time-color: white;
 }
@@ -27,7 +27,22 @@ body {
 
 .header__title {
 	color: var(--header-color);
-	text-shadow: var(--header-shadow);
+	text-shadow: var(--text-shadow);
+}
+
+.greetings {
+	text-align: center;
+	text-shadow: var(--text-shadow);
+}
+
+.greetings > p {
+	margin-top: 0;
+}
+
+.greetings__text {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
 }
 
 .main {
