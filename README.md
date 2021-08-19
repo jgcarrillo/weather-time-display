@@ -40,7 +40,9 @@ greetingNight: 'Good night'
 
 ### ⛈️ Weather API
 
-_Work in progress_
+Open Weather Map API provides you all the information about the forecast and weather in specific locations. To run the app, you simply need to set your API key in the `key.js` file.
+
+This app runs with **latitude** and **longitude**, but you can also search by other terms like city or country.
 
 ### 🚀 Usage
 
