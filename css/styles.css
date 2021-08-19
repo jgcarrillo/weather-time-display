@@ -21,6 +21,7 @@ body {
 	background-color: var(--bg-color);
 }
 
+/* TITLE */
 .header {
 	text-align: center;
 	padding: 0.2rem;
@@ -34,6 +35,7 @@ body {
 	text-shadow: var(--text-shadow);
 }
 
+/* GREETINGS */
 .greetings {
 	text-align: center;
 	text-shadow: var(--text-shadow);
@@ -49,6 +51,7 @@ body {
 	color: var(--greetings-color);
 }
 
+/* GRID */
 .main {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -61,6 +64,7 @@ body {
 	box-shadow: var(--container-shadow);
 }
 
+/* LEFT SIDE */
 .main__time {
 	grid-area: time;
 	color: var(--main-time-color);
@@ -78,6 +82,7 @@ body {
 	font-size: 100px;
 }
 
+/* RIGHT SIDE */
 .main__weather {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -111,11 +116,11 @@ body {
 
 .icon {
 	grid-area: icon;
-	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+/* MEDIA QUERIES */
 @media only screen and (max-width: 1000px) {
 	.clock span {
 		font-size: 40px;
@@ -139,5 +144,12 @@ body {
 
 	.greetings__text {
 		font-size: 30px;
+	}
+
+	.weather {
+		font-size: 2rem;
+	}
+
+	.icon {
 	}
 }

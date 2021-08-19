@@ -6,12 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Weather and Time Display</title>
 
+		<!-- GOOGLE FONTS -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
 
+		<!-- CUSTOMS STYLES -->
 		<link rel="stylesheet" href="css/styles.css" />
 
+		<!-- JS SCRIPTS -->
 		<script defer src="js/config.js"></script>
 		<script defer src="./key.js"></script>
 		<script defer src="js/clock.js"></script>
@@ -19,13 +22,19 @@
 		<script defer src="js/weather.js"></script>
 	</head>
 	<body>
+		<!-- MAIN HEADER -->
 		<header class="header">
 			<h1 class="header__title">Weather and Time Display</h1>
 		</header>
+
+		<!-- GREETINGS -->
 		<section class="greetings">
 			<p class="greetings__text">Good Morning!</p>
 		</section>
+
+		<!-- GRID SECTION -->
 		<main class="main">
+			<!-- LEFT SIDE - TIME -->
 			<section class="main__time">
 				<div class="clock">
 					<span class="clock__hours">20</span>
@@ -35,6 +44,7 @@
 					<span class="clock__seconds">37</span>
 				</div>
 			</section>
+			<!-- RIGHT SIDE - WEATHER -->
 			<section class="main__weather">
 				<p class="month">MONTH</p>
 				<p class="weather">WEATHER</p>

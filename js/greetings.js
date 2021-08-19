@@ -10,6 +10,7 @@ const gree2 = CONFIG.greetingMorning;
 const gree3 = CONFIG.greetingAfternoon;
 const gree4 = CONFIG.greetingEvening;
 
+// CUSTOM GRETTINGS DEPENDING ON THE CURRENT TIME
 if (hours > 23 && hours < 5) {
 	greetingContent.textContent = `${gree1}, ${userName}`;
 } else if (hours >= 6 && hours < 12) {

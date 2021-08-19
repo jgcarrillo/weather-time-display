@@ -1,8 +1,10 @@
+// GLOBAL VARIABLES
 const date = new Date();
 const monthContent = document.querySelector('.month');
 const weatherContent = document.querySelector('.weather');
 const iconContent = document.querySelector('.icon');
 
+// API URL - DATA IN key.js
 const key = `${API.weatherKey}`;
 const lat = `${API.weatherLatitude}`;
 const long = `${API.weatherLongitude}`;
@@ -10,6 +12,7 @@ const tempUnit = `${API.weatherUnit}`;
 const icon = `${API.weatherIcon}`;
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}`;
 
+// MONTHS FORMATION
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 const month = months[date.getMonth()];
@@ -17,6 +20,7 @@ const currentDay = date.getDate();
 
 monthContent.textContent = `${month} ${currentDay}`;
 
+// FETCH DATA FUNCTION -- RECEIVING DATA FROM THE API
 const getWeather = async () => {
 	const res = await fetch(url);
 	const data = await res.json();
@@ -37,7 +41,6 @@ const getWeather = async () => {
 
 	iconContent.appendChild($img);
 	weatherContent.textContent = `${weather.state} - ${weather.temp}`;
-	console.log(data);
 };
 
 getWeather();

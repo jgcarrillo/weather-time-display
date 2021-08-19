@@ -16,6 +16,7 @@ const displayClock = () => {
 		dateFormat.hours = 12;
 	}
 
+	// Add a zero in hours < 10 by displaying two digits
 	dateFormat.hours = dateFormat.hours < 10 ? '0' + dateFormat.hours : dateFormat.hours;
 	dateFormat.minutes = dateFormat.minutes < 10 ? '0' + dateFormat.minutes : dateFormat.minutes;
 	dateFormat.seconds = dateFormat.seconds < 10 ? '0' + dateFormat.seconds : dateFormat.seconds;
