@@ -28,6 +28,8 @@ body {
 
 .header__title {
 	font-size: 60px;
+	margin-top: 0.2em;
+	margin-bottom: 0;
 	color: var(--header-color);
 	text-shadow: var(--text-shadow);
 }
@@ -82,7 +84,8 @@ body {
 	grid-template-rows: repeat(2, 1fr);
 	grid-template-areas:
 		'date'
-		'weather';
+		'weather'
+		'icon';
 	grid-area: weather;
 	background-color: var(--bg-weather);
 	text-align: center;
@@ -99,10 +102,18 @@ body {
 
 .weather {
 	grid-area: weather;
-	margin-top: 0;
+	margin-top: auto;
+	margin-bottom: auto;
 	margin-bottom: auto;
 	font-size: 50px;
 	text-transform: capitalize;
+}
+
+.icon {
+	grid-area: icon;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media only screen and (max-width: 1000px) {
