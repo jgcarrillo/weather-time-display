@@ -163,3 +163,24 @@ body {
 	.icon {
 	}
 }
+
+@media only screen and (max-width: 800px) {
+	.main {
+		grid-template-areas:
+			'time'
+			'weather';
+		grid-template-columns: 1fr;
+	}
+
+	.clock span {
+		font-size: 30px;
+	}
+
+	.month {
+		font-size: 30px;
+	}
+
+	.weather {
+		font-size: 1.5rem;
+	}
+}
