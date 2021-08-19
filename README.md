@@ -11,6 +11,7 @@
 -   [✨ Explanation](#-explanation)
 -   [🎨 Customization and features](#-customization-and-features)
 -   [⛈️ Weather API](#-weather-api)
+-   [🚀 Usage](#-usage)
 -   [💛 Contact](#-contact)
 
 ### ✨ Explanation
@@ -40,6 +41,22 @@ greetingNight: 'Good night'
 ### ⛈️ Weather API
 
 _Work in progress_
+
+### 🚀 Usage
+
+-   Clone this repo.
+-   Rename the `key.example.js` file to `key.js`.
+-   Update your data in that file:
+
+```js
+const API = {
+	// WEATHER
+	weatherKey: '', // Paste here your API code for Open Weather Map
+	weatherUnit: 'C', //
+	weatherLatitude: '', // Paste here your latitude based on your location
+	weatherLongitude: '', // Paste here your longitude based on your location
+};
+```
 
 ### 💛 Contact
 
