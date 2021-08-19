@@ -10,7 +10,7 @@
 
 -   [✨ Explanation](#-explanation)
 -   [🎨 Customization and features](#-customization-and-features)
--   [⛈️ Weather API](#-weather-api)
+-   [⛈️ Weather](#-weather)
 -   [🚀 Usage](#-usage)
 -   [💛 Contact](#-contact)
 
@@ -38,7 +38,7 @@ greetingEvening: 'Good evening',
 greetingNight: 'Good night'
 ```
 
-### ⛈️ Weather API
+### ⛈️ Weather
 
 Open Weather Map API provides you all the information about the forecast and weather in specific locations. To run the app, you simply need to set your API key in the `key.js` file.
 
