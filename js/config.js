@@ -7,10 +7,4 @@ const CONFIG = {
 	greetingAfternoon: 'Good afternoon',
 	greetingEvening: 'Good evening',
 	greetingNight: 'Good night',
-
-	// WEATHER
-	weatherKey: '',
-	weatherUnit: '',
-	weatherLatitude: '',
-	weatherLongitude: '',
 };
